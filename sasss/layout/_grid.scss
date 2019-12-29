@@ -1,0 +1,18 @@
+.grid-container{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2rem 8rem repeat(8,1fr) 2rem;
+    grid-template-rows:auto auto auto 5vh;
+    grid-template-areas: 'h h h h h h  h h h h h'
+                         '. . p p p p p p p p .'
+                         '. m m m m m m m m m .'
+                         '. f f f f f f f f f .';
+   
+   
+    
+   
+   
+   }
+   

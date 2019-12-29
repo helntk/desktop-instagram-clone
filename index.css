@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 60%; }
+
+@media (max-width: 800px) {
+  html {
+    font-size: 50%; } }
+@media (min-width: 1200px) {
+  html {
+    font-size: 70%; } }
+@media (min-width: 1400px) {
+  html {
+    font-size: 85%; } }
+@media (min-width: 1600px) {
+  html {
+    font-size: 100%; } }
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', 'sans-serif'; }
+
+.grid-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 2rem 8rem repeat(8, 1fr) 2rem;
+  grid-template-rows: auto auto auto 5vh;
+  grid-template-areas: 'h h h h h h  h h h h h' '. . p p p p p p p p .' '. m m m m m m m m m .' '. f f f f f f f f f .'; }
+
+.perfil {
+  grid-area: p;
+  padding: 5rem 0; }
+  .perfil .perfil__information {
+    display: flex;
+    margin-top: 5rem; }
+    .perfil .perfil__information__img img {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 10rem;
+      margin-top: 1rem; }
+    .perfil .perfil__information__data {
+      padding-left: 8rem;
+      padding-top: 1rem; }
+      .perfil .perfil__information__data .data__header {
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+        width: 100%;
+        justify-content: space-around; }
+        .perfil .perfil__information__data .data__header .follow {
+          margin-left: 2rem; }
+          .perfil .perfil__information__data .data__header .follow button {
+            border-radius: .3rem;
+            border: none; }
+          .perfil .perfil__information__data .data__header .follow .follow__button {
+            background-color: #3897f0;
+            color: #fff;
+            padding: .5rem 2rem; }
+          .perfil .perfil__information__data .data__header .follow .options__button {
+            background-color: #3897f0;
+            color: #fff;
+            padding: .5rem 1rem; }
+          .perfil .perfil__information__data .data__header .follow .pontos__button {
+            background-color: #fff;
+            color: black;
+            padding: .5rem 1rem; }
+      .perfil .perfil__information__data .followers {
+        display: flex;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+        justify-content: space-between; }
+      .perfil .perfil__information__data .description {
+        margin-top: 2rem;
+        font-size: 1.8rem; }
+        .perfil .perfil__information__data .description p {
+          margin-top: .5rem; }
+
+.header {
+  grid-area: h;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 3rem 0; }
+  .header .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem; }
+    .header .navbar__box--1 {
+      display: flex;
+      width: 16rem;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 2.2rem; }
+      .header .navbar__box--1 .line {
+        height: 3rem;
+        width: .1rem;
+        background-color: black; }
+    .header .navbar__box--2 .search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3rem;
+      color: #a39999;
+      font-size: 1.2rem;
+      width: 20rem;
+      background-color: #f7f7f7;
+      border-radius: .4rem;
+      border: solid 1px #dbdbdb; }
+    .header .navbar__box--3 {
+      color: #003569;
+      width: 12rem;
+      font-size: 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+
+.fotos {
+  border-top: 0.2rem solid #dbdbdb;
+  grid-area: m; }
+  .fotos__header {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    font-size: 1.4rem; }
+    .fotos__header .item-1 {
+      margin-right: 4rem; }
+  .fotos .grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-auto-rows: min-content;
+    grid-gap: 2rem; }
+    .fotos .grid .grid-item img {
+      width: 100%;
+      height: 30rem; }
+  .fotos .loading {
+    height: 15rem;
+    display: flex;
+    justify-content: center; }
+
+.footer {
+  margin-top: 10rem;
+  grid-area: f; }
+  .footer footer {
+    margin: 0 0 5rem 0;
+    font-size: 1.3rem; }
+    .footer footer ul {
+      display: flex;
+      list-style-type: none;
+      width: 90%;
+      justify-content: space-between;
+      color: #003569;
+      font-size: 1.4rem; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,79 @@
+.perfil{
+    grid-area: p;
+    padding: 5rem 0;
+
+ .perfil__information{
+     display: flex;
+     margin-top:5rem;
+     &__img{
+       img{                  
+        width: 15rem;
+        height: 15rem;
+        border-radius: 10rem;
+        margin-top: 1rem;
+
+       }
+      
+   }
+
+
+   &__data{
+    padding-left: 8rem;
+    padding-top: 1rem;
+       .data__header{
+          display: flex;
+          align-items: center;
+          font-size: 3rem;
+         
+          width: 100%;
+          justify-content: space-around;
+
+          .follow{
+          margin-left: 2rem;
+          button{
+            border-radius: .3rem;
+            border: none;
+
+        }
+        .follow__button{
+            background-color: #3897f0;
+            color:#fff;
+            padding:.5rem 2rem; 
+
+        }
+
+        .options__button{
+            background-color: #3897f0;
+            color:#fff;
+            padding:.5rem 1rem; 
+
+        }
+
+
+        .pontos__button{
+            background-color: #fff;
+            color:black;
+            padding:.5rem 1rem; 
+
+        }
+
+          }
+        }
+
+    .followers{
+     display: flex;
+     font-size: 1.6rem;
+     margin-top:3rem;
+     justify-content: space-between;
+    }
+
+    .description{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    p{
+     margin-top: .5rem;
+    }
+    }
+   }
+ }
+}
